@@ -1,0 +1,3 @@
+[submodule "tekvideo.sdu.dk"]
+	path = tekvideo.sdu.dk
+	url = https://github.com/henrikmidtiby/tekvideo.sdu.dk.git
