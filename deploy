@@ -7,8 +7,8 @@ mv build/libs/*.war ../tekvideo.war
 cd ..
 cp tekvideo.war `date +'tekvideo%Y-%m-%d_%H.%M.%S.war'`
 sudo initctl stop tomcat
-sudo mv tekvideo.war /opt/tomcat/webapps/ROOT.war
-sudo chown tomcat: /opt/tomcat/webapps/ROOT.war
+sudo mv tekvideo.war /opt/tomcat/latest/webapps/ROOT.war
+sudo chown tomcat: /opt/tomcat/latest/webapps/ROOT.war
 sleep 2
 sudo initctl start tomcat
-sudo tail -f `date +'/opt/tomcat/logs/catalina.%Y-%m-%d.log'`
+sudo tail -f `date +'/opt/tomcat/latest/logs/catalina.%Y-%m-%d.log'`
